@@ -1,2 +1,2 @@
 # TLD-Citizens-Choice
-The Last Day: Citizen's Choice is a Cyberpunk/Dystopian binary choice game
+The Last Day: Citizen's Choice is an immersive, decision-based survival game set in the dystopian city of Rivers, controlled by the authoritarian N.E.O. regime. Players navigate moral dilemmas and life-threatening scenarios while balancing critical stats: health, morality, influence, and addiction. Choose from three distinct characters—The Survivor, The Activist, or The Opportunist—each with unique challenges and starting stats. Your decisions shape the narrative, leading to one of several dynamic endings that reflect your choices. Will you survive, resist, or succumb to the temptations of this unforgiving world? The fate of Rivers—and your soul—rests in your hands.
