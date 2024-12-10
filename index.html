@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Last Day Card Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="game-container">
+    <!-- Intro Screen -->
+    <div id="intro-screen" class="screen">
+      <h1>The Last Day</h1>
+      <p>
+        Welcome to Rivers, a dystopian city under the control of N.E.O. 
+        Life is a constant struggle as you navigate survival, rebellion, and opportunity.  
+        Your decisions will shape your fate and determine your place in this unforgiving world.
+      </p>
+      <p>
+        <strong>Win Conditions:</strong> Survive, escape, or uncover the truth while balancing your health, morality, influence, and addiction.
+      </p>
+      <button onclick="showCharacterSelect()">Continue</button>
+    </div>
+
+    <!-- Character Selection Screen -->
+    <div id="character-select-screen" class="screen hidden">
+      <h2>Select Your Character</h2>
+      <div>
+        <button onclick="selectCharacter('survivor')">
+          The Survivor<br>
+          <small>High Health, low Influence. A citizen focused on survival.</small>
+        </button>
+        <button onclick="selectCharacter('activist')">
+          The Activist<br>
+          <small>High Morality, low Health. An idealist fighting N.E.O.</small>
+        </button>
+        <button onclick="selectCharacter('opportunist')">
+          The Opportunist<br>
+          <small>High Influence, low Morality. Willing to play both sides.</small>
+        </button>
+      </div>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game-screen" class="screen hidden">
+      <!-- Stats Display -->
+      <div id="stats">
+        <p>Health: <span id="health">10</span></p>
+        <p>Morality: <span id="morality">10</span></p>
+        <p>Influence: <span id="influence">10</span></p>
+        <p>Addiction: <span id="addiction">0</span></p>
+      </div>
+
+      <!-- Card Area -->
+      <div id="card-container">
+        <div class="card">
+          <p id="card-text">Loading...</p>
+          <p id="feedback"></p>
+          <button id="left-button" onclick="swipeLeft()">Left</button>
+          <button id="right-button" onclick="swipeRight()">Right</button>
+        </div>
+      </div>
+      <button id="next-button" onclick="nextCard()" style="display: none;">Next</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
